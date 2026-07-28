@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Physics Graph</title>
+
+    <link rel="stylesheet" href="./css/graph.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <button id="backBtn">Back</button>
+
+    <h1 id="graphTitle"></h1>
+
+    <h2 id="graphAnswer"></h2>
+
+    <div class="graph-layout">
+      <div id="sliderContainer"></div>
+
+      <div class="graph-box">
+        <canvas id="graphCanvas"></canvas>
+      </div>
+    </div>
+
+    <script type="module" src="./JS/Core JS/formulas.js"></script>
+    <script type="module" src="./JS/Core JS/graph.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="color-scheme" content="dark" /> -->
+
+    <title>Physics Calculator v2</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h1>Physics Calculator v2</h1>
+
+    <div class="container">
+      <div class="controls">
+        <div id="formSeleToolTip" class="toolTip"></div>
+        <select id="formulaSelect">
+          <option id="value" selected disabled>Select formula</option>
+        </select>
+
+        <div id="formFilToolTip" class="toolTip"></div>
+        <select id="formulaFilter">
+          <option value="all" selected disabled>Formula Catogary</option>
+          <option value="energy">Energy</option>
+          <option value="motion">Motion</option>
+          <option value="work">Work</option>
+        </select>
+
+        <div id="clasFilToolTip" class="toolTip"></div>
+        <select id="classFilter">
+          <option value="AllClass">All class</option>
+          <option value="9">9th class</option>
+          <option value="10">10th class</option>
+        </select>
+
+        <div id="manuIntToolTip" class="toolTip"></div>
+        <input id="manuInt" placeholder="Search formula" />
+
+        <div id="smartIntToolTip" class="toolTip"></div>
+        <input id="smartInput" placeholder="Try: F=20 s=2" />
+
+        <div id="smartBtnToolTip" class="toolTip"></div>
+        <button id="smartBtn">smart Calculate</button>
+
+        <div id="calBtnToolTip" class="toolTip"></div>
+        <button id="calBtn">Calculate</button>
+
+        <div id="viewGraphBtnToolTip" class="toolTip"></div>
+        <button id="viewGraphBtn">View Graph</button>
+
+        <div id="errToolTip" class="toolTip"></div>
+        <div id="error"></div>
+      </div>
+
+      <div id="result-container">
+        <div id="inputToolTip" class="toolTip"></div>
+        <div id="inputs"></div>
+
+        <div id="resToolTip" class="toolTip"></div>
+        <div id="result"></div>
+
+        <div id="stepsToolTip" class="toolTip"></div>
+        <div id="steps"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./JS/Core JS/formulas.js"></script>
+    <script type="module" src="./JS/Core JS/main-engine.js"></script>
+    <script type="module" src="./JS/Assitence JS/userStorage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffcc;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select,
+input,
+button {
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+select,
+input {
+  background: #2b2b2b;
+  color: white;
+}
+
+button {
+  background: #00ffcc;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+select {
+  background-color: #2b2b2b;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+option {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+#formulaContainer {
+  margin-top: 15px;
+}
+
+.formula-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2a2a2a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+}
+
+.smart-box {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.smart-box input {
+  flex: 1;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+#inputs input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#equationDisplay {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #00ffcc;
+}
+
+#result {
+  color: #00ffcc;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#steps {
+  margin-top: 15px;
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.7;
+  border: 1px solid #333;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #2b2b2b inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.toolTip {
+  display: inline;
+}

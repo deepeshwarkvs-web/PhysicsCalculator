@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffcc;
+  margin-bottom: 25px;
+}
+
+.graph-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.top-bar {
+  margin-bottom: 20px;
+}
+
+.top-bar button {
+  padding: 10px 20px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.answer-box {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.answer-box h2 {
+  margin: 0;
+  color: #00ffcc;
+
+  /* responsive text */
+  font-size: clamp(22px, 4vw, 40px);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.slider-panel {
+  flex: 1;
+  min-width: 280px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slider-panel input[type="range"] {
+  width: 100%;
+}
+
+.graph-panel {
+  flex: 2;
+  min-width: 300px;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+
+  /* IMPORTANT */
+  position: relative;
+  overflow: hidden;
+}
+
+/* RESPONSIVE CANVAS */
+canvas {
+  width: 100% !important;
+  height: 500px !important;
+  display: block;
+}
+
+/* BACK BUTTON */
+#backBtn {
+  background: #00ffcc;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+
+  transition: all 0.2s ease;
+}
+
+#backBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .slider-panel,
+  .graph-panel {
+    width: 100%;
+    min-width: unset;
+  }
+
+  canvas {
+    max-height: 55vh;
+  }
+
+  #backBtn {
+    width: 100%;
+  }
+}
+
+.graph-panel {
+  flex: 2;
+  min-width: 300px;
+  width: 100%;
+  height: 600px;
+
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+
+  position: relative;
+  overflow: hidden;
+}
